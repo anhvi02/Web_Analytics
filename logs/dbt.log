@@ -1,0 +1,129 @@
+[0m16:38:08.649169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104886f00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053260f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105325d90>]}
+
+
+============================== 16:38:08.652058 | 1e1c67a5-72cb-48c1-a09a-135580cc2c3b ==============================
+[0m16:38:08.652058 [info ] [MainThread]: Running with dbt=1.12.0
+[0m16:38:08.652336 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'invocation_command': 'dbt init', 'cache_selected_only': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'partial_parse': 'True', 'target_path': 'None', 'log_path': 'logs', 'log_cache_events': 'False', 'no_print': 'None', 'empty': 'None', 'quiet': 'False', 'printer_width': '80', 'debug': 'False', 'profiles_dir': '/Users/nobit/.dbt', 'hints_enabled': 'True', 'write_json': 'True', 'fail_fast': 'False', 'maximum_seed_size_mib': '1', 'static_parser': 'True', 'introspect': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None'}
+[0m16:38:27.399716 [debug] [MainThread]: Starter project path: /opt/anaconda3/lib/python3.12/site-packages/dbt/include/starter_project
+[0m16:38:27.415835 [info ] [MainThread]: Setting up your profile.
+[0m16:38:36.350314 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m16:38:36.356263 [error] [MainThread]: Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.12/site-packages/dbt/cli/requires.py", line 190, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/dbt/cli/requires.py", line 136, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/dbt/cli/main.py", line 503, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/dbt/task/init.py", line 360, in run
+    self.setup_profile(profile_name)
+  File "/opt/anaconda3/lib/python3.12/site-packages/dbt/task/init.py", line 264, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/opt/anaconda3/lib/python3.12/site-packages/dbt/task/init.py", line 181, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/opt/anaconda3/lib/python3.12/site-packages/dbt/task/init.py", line 165, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/dbt/task/init.py", line 131, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/click/termui.py", line 218, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/click/termui.py", line 201, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m16:38:36.367580 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 27.757114, "process_in_blocks": "0", "process_kernel_time": 0.16942, "process_mem_max_rss": "119373824", "process_out_blocks": "0", "process_user_time": 0.640534}
+[0m16:38:36.368659 [debug] [MainThread]: Command `dbt init` failed at 16:38:36.368456 after 27.76 seconds
+[0m16:38:36.369207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105326210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054183e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053e5c40>]}
+[0m16:38:36.369715 [debug] [MainThread]: Flushing usage events
+[0m16:38:37.710606 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:40:06.517844 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10941b200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa62090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa61d60>]}
+
+
+============================== 16:40:06.520491 | c943442a-4f9a-4a9a-b9fc-18801c7b8a04 ==============================
+[0m16:40:06.520491 [info ] [MainThread]: Running with dbt=1.12.0
+[0m16:40:06.520773 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'log_cache_events': 'False', 'warn_error': 'None', 'log_path': 'logs', 'printer_width': '80', 'target_path': 'None', 'static_parser': 'True', 'debug': 'False', 'maximum_seed_size_mib': '1', 'partial_parse': 'True', 'hints_enabled': 'True', 'log_format': 'default', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'None', 'version_check': 'True', 'use_colors': 'True', 'invocation_command': 'dbt init web_analytics --profile profile_web_analytics', 'indirect_selection': 'eager', 'introspect': 'True', 'profiles_dir': '/Users/nobit/.dbt', 'cache_selected_only': 'False', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m16:40:06.529402 [debug] [MainThread]: Starter project path: /opt/anaconda3/lib/python3.12/site-packages/dbt/include/starter_project
+[0m16:40:06.534727 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m16:40:06.535115 [info ] [MainThread]: dbt version: 1.12.0
+[0m16:40:06.535294 [info ] [MainThread]: python version: 3.12.7
+[0m16:40:06.535422 [info ] [MainThread]: python path: /opt/anaconda3/bin/python
+[0m16:40:06.535536 [info ] [MainThread]: os info: macOS-15.3.1-arm64-arm-64bit
+[0m16:40:06.585568 [info ] [MainThread]: Using profiles dir at /Users/nobit/.dbt
+[0m16:40:06.585814 [info ] [MainThread]: Using profiles.yml file at /Users/nobit/.dbt/profiles.yml
+[0m16:40:06.585952 [info ] [MainThread]: Using dbt_project.yml file at /Users/nobit/Documents/Development/web_analytics/web_analytics/dbt_project.yml
+[0m16:40:06.586075 [info ] [MainThread]: adapter type: sqlserver
+[0m16:40:06.586190 [info ] [MainThread]: adapter version: 1.11.0
+[0m16:40:06.626320 [info ] [MainThread]: Configuration:
+[0m16:40:06.626574 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:40:06.626711 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:40:06.626826 [info ] [MainThread]: Required dependencies:
+[0m16:40:06.626994 [debug] [MainThread]: Executing "git --help"
+[0m16:40:06.633124 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:40:06.633571 [debug] [MainThread]: STDERR: "b''"
+[0m16:40:06.633727 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:40:06.633869 [info ] [MainThread]: Connection:
+[0m16:40:06.634032 [info ] [MainThread]:   driver: ODBC Driver 18 for SQL Server
+[0m16:40:06.634155 [info ] [MainThread]:   server: 45.124.94.158
+[0m16:40:06.634262 [info ] [MainThread]:   port: 1433
+[0m16:40:06.634369 [info ] [MainThread]:   database: xomdata_dataset
+[0m16:40:06.634475 [info ] [MainThread]:   schema: web_analytics
+[0m16:40:06.634578 [info ] [MainThread]:   UID: anhvipham0904
+[0m16:40:06.634679 [info ] [MainThread]:   authentication: sql
+[0m16:40:06.634783 [info ] [MainThread]:   windows_login: False
+[0m16:40:06.634881 [info ] [MainThread]:   retries: 3
+[0m16:40:06.634981 [info ] [MainThread]:   login_timeout: 0
+[0m16:40:06.635083 [info ] [MainThread]:   query_timeout: 0
+[0m16:40:06.635181 [info ] [MainThread]:   trace_flag: False
+[0m16:40:06.635280 [info ] [MainThread]:   encrypt: True
+[0m16:40:06.635380 [info ] [MainThread]:   trust_cert: True
+[0m16:40:06.635477 [info ] [MainThread]:   backend: pyodbc
+[0m16:40:06.635578 [info ] [MainThread]:   xact_abort: True
+[0m16:40:06.635864 [info ] [MainThread]: Registered adapter: sqlserver=1.11.0
+[0m16:40:06.688810 [warn ] [MainThread]: [[33mWARNING[0m]: When True, uses SQL Server-native string type mappings: STRING -> VARCHAR(MAX), NCHAR -> NCHAR(1), NVARCHAR -> NVARCHAR(4000). When False (default), preserves legacy mappings: STRING and NVARCHAR -> VARCHAR(8000), NCHAR -> CHAR(1). The new behaviour is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_native_string_types` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m16:40:06.689237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': 'c943442a-4f9a-4a9a-b9fc-18801c7b8a04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b23c950>]}
+[0m16:40:06.689475 [warn ] [MainThread]: [[33mWARNING[0m]: When True, dbt transaction hooks (begin/commit) emit real T-SQL BEGIN TRANSACTION / COMMIT TRANSACTION statements. When False (default and legacy), begin/commit are no-ops and each statement is auto-committed by the driver. This means earlier successful statements are not rolled back if a later statement fails. This behavior is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_dbt_transactions` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m16:40:06.689656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': 'c943442a-4f9a-4a9a-b9fc-18801c7b8a04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a8b3560>]}
+[0m16:40:06.689896 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m16:40:06.690054 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m16:40:06.690160 [debug] [MainThread]: On debug: select 1 as id
+[0m16:40:06.690263 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:40:06.727746 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=45.124.94.158,1433;Database=xomdata_dataset;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.0;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m16:40:09.056444 [debug] [MainThread]: sqlserver adapter: Connected to db: xomdata_dataset
+[0m16:40:09.654993 [debug] [MainThread]: SQL status: OK in 3.000 seconds
+[0m16:40:09.658615 [debug] [MainThread]: On debug: Close
+[0m16:40:09.659587 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:40:09.660341 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:40:09.661406 [info ] [MainThread]: Your new dbt project "web_analytics" was created!
+Initialized new project in /Users/nobit/Documents/Development/web_analytics/web_analytics/web_analytics
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:40:09.665566 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 3.185698, "process_in_blocks": "0", "process_kernel_time": 0.186076, "process_mem_max_rss": "130301952", "process_out_blocks": "0", "process_user_time": 0.730148}
+[0m16:40:09.666556 [debug] [MainThread]: Command `dbt init` succeeded at 16:40:09.666365 after 3.19 seconds
+[0m16:40:09.667904 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:40:09.668588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2a6930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049c2ea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10af68ef0>]}
+[0m16:40:09.669349 [debug] [MainThread]: Flushing usage events
+[0m16:40:11.041326 [debug] [MainThread]: An error was encountered while trying to flush usage events
