@@ -127,3 +127,70 @@ Happy modeling!
 [0m16:40:09.668588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2a6930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049c2ea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10af68ef0>]}
 [0m16:40:09.669349 [debug] [MainThread]: Flushing usage events
 [0m16:40:11.041326 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:49:30.605935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094c7f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096f6180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096f5c40>]}
+
+
+============================== 16:49:30.608453 | 71ac98be-2469-46f7-8902-b5dff031a161 ==============================
+[0m16:49:30.608453 [info ] [MainThread]: Running with dbt=1.12.0
+[0m16:49:30.608731 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'introspect': 'True', 'log_format': 'default', 'empty': 'None', 'invocation_command': 'dbt debug', 'log_path': '/Users/nobit/Documents/Development/web_analytics/logs', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'no_print': 'None', 'write_json': 'True', 'indirect_selection': 'eager', 'warn_error': 'None', 'profiles_dir': '/Users/nobit/.dbt', 'cache_selected_only': 'False', 'version_check': 'True', 'target_path': 'None', 'hints_enabled': 'True', 'static_parser': 'True', 'partial_parse': 'True', 'debug': 'False', 'quiet': 'False', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'log_cache_events': 'False'}
+[0m16:49:30.617467 [info ] [MainThread]: dbt version: 1.12.0
+[0m16:49:30.617702 [info ] [MainThread]: python version: 3.12.7
+[0m16:49:30.617825 [info ] [MainThread]: python path: /opt/anaconda3/bin/python
+[0m16:49:30.617938 [info ] [MainThread]: os info: macOS-15.3.1-arm64-arm-64bit
+[0m16:49:30.695245 [info ] [MainThread]: Using profiles dir at /Users/nobit/.dbt
+[0m16:49:30.695455 [info ] [MainThread]: Using profiles.yml file at /Users/nobit/.dbt/profiles.yml
+[0m16:49:30.695589 [info ] [MainThread]: Using dbt_project.yml file at /Users/nobit/Documents/Development/web_analytics/dbt_project.yml
+[0m16:49:30.695699 [info ] [MainThread]: adapter type: sqlserver
+[0m16:49:30.695803 [info ] [MainThread]: adapter version: 1.11.0
+[0m16:49:30.732643 [info ] [MainThread]: Configuration:
+[0m16:49:30.732863 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:49:30.732984 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:49:30.733093 [info ] [MainThread]: Required dependencies:
+[0m16:49:30.733247 [debug] [MainThread]: Executing "git --help"
+[0m16:49:30.743476 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:49:30.743893 [debug] [MainThread]: STDERR: "b''"
+[0m16:49:30.744041 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:49:30.744175 [info ] [MainThread]: Connection:
+[0m16:49:30.744334 [info ] [MainThread]:   driver: ODBC Driver 18 for SQL Server
+[0m16:49:30.744470 [info ] [MainThread]:   server: 45.124.94.158
+[0m16:49:30.744582 [info ] [MainThread]:   port: 1433
+[0m16:49:30.744688 [info ] [MainThread]:   database: xomdata_dataset
+[0m16:49:30.744789 [info ] [MainThread]:   schema: web_analytics
+[0m16:49:30.744889 [info ] [MainThread]:   UID: anhvipham0904
+[0m16:49:30.744989 [info ] [MainThread]:   authentication: sql
+[0m16:49:30.745089 [info ] [MainThread]:   windows_login: False
+[0m16:49:30.745205 [info ] [MainThread]:   retries: 3
+[0m16:49:30.745304 [info ] [MainThread]:   login_timeout: 0
+[0m16:49:30.745400 [info ] [MainThread]:   query_timeout: 0
+[0m16:49:30.745499 [info ] [MainThread]:   trace_flag: False
+[0m16:49:30.745599 [info ] [MainThread]:   encrypt: True
+[0m16:49:30.745695 [info ] [MainThread]:   trust_cert: True
+[0m16:49:30.745790 [info ] [MainThread]:   backend: pyodbc
+[0m16:49:30.745889 [info ] [MainThread]:   xact_abort: True
+[0m16:49:30.746133 [info ] [MainThread]: Registered adapter: sqlserver=1.11.0
+[0m16:49:30.783215 [warn ] [MainThread]: [[33mWARNING[0m]: When True, uses SQL Server-native string type mappings: STRING -> VARCHAR(MAX), NCHAR -> NCHAR(1), NVARCHAR -> NVARCHAR(4000). When False (default), preserves legacy mappings: STRING and NVARCHAR -> VARCHAR(8000), NCHAR -> CHAR(1). The new behaviour is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_native_string_types` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m16:49:30.783721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '71ac98be-2469-46f7-8902-b5dff031a161', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c5f8c0>]}
+[0m16:49:30.783959 [warn ] [MainThread]: [[33mWARNING[0m]: When True, dbt transaction hooks (begin/commit) emit real T-SQL BEGIN TRANSACTION / COMMIT TRANSACTION statements. When False (default and legacy), begin/commit are no-ops and each statement is auto-committed by the driver. This means earlier successful statements are not rolled back if a later statement fails. This behavior is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_dbt_transactions` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m16:49:30.784130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '71ac98be-2469-46f7-8902-b5dff031a161', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10965ad20>]}
+[0m16:49:30.784360 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m16:49:30.784518 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m16:49:30.784632 [debug] [MainThread]: On debug: select 1 as id
+[0m16:49:30.784736 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:49:30.788789 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=45.124.94.158,1433;Database=xomdata_dataset;UID=***;PWD=***;encrypt=Yes;TrustServerCertificate=Yes;APP=dbt-sqlserver/1.11.0;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m16:49:32.842390 [debug] [MainThread]: sqlserver adapter: Connected to db: xomdata_dataset
+[0m16:49:33.282918 [debug] [MainThread]: SQL status: OK in 2.000 seconds
+[0m16:49:33.286332 [debug] [MainThread]: On debug: Close
+[0m16:49:33.287144 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:49:33.287740 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:49:33.295060 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 2.7288556, "process_in_blocks": "0", "process_kernel_time": 0.177653, "process_mem_max_rss": "135708672", "process_out_blocks": "0", "process_user_time": 0.709848}
+[0m16:49:33.296727 [debug] [MainThread]: Command `dbt debug` succeeded at 16:49:33.296432 after 2.73 seconds
+[0m16:49:33.298024 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:49:33.298866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109ae9cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094c7f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096adaf0>]}
+[0m16:49:33.300728 [debug] [MainThread]: Flushing usage events
+[0m16:49:34.639605 [debug] [MainThread]: An error was encountered while trying to flush usage events
