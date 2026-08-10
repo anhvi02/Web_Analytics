@@ -1,1 +1,1 @@
-SELECT 
+SELECT * FROM web_analytics.order_items
